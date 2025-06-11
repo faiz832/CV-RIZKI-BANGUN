@@ -20,8 +20,8 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[552px] md:min-h-[calc(100vh-100px)]">
-        <div className="relative h-[552px] md:min-h-[calc(100vh-100px)] my-2 bg-white rounded-3xl shadow-lg lg:shadow-none overflow-hidden">
-          <img src={HeroBg} alt="hero-img" className="absolute top-0 right-0 w-full lg:w-1/2 h-full object-cover lg:object-right rounded-3xl" />
+        <div className="relative h-[552px] md:min-h-[calc(100vh-100px)] my-2 bg-white rounded-lg shadow-lg lg:shadow-none overflow-hidden">
+          <img src={HeroBg} alt="hero-img" className="absolute top-0 right-0 w-full lg:w-1/2 h-full object-cover lg:object-right rounded-lg" />
 
           <div className="absolute top-0 left-0 w-full h-full flex items-center">
             <div className="px-4 md:px-8 xl:px-0 w-3/4 md:max-w-lg lg:max-w-xl xl:max-w-2xl text-white lg:text-black">
@@ -92,7 +92,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative py-12 rounded-3xl overflow-hidden">
+        <div className="relative py-12 rounded-lg overflow-hidden">
           {/* Background Image */}
           <img src={CTABg} alt="Call to Action Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
 
@@ -161,7 +161,7 @@ export default function Home() {
                 size: "lg:col-span-3 lg:row-span-2",
               },
             ].map((feature, index) => (
-              <div key={index} className={`relative overflow-hidden rounded-3xl group h-80 ${feature.size}`}>
+              <div key={index} className={`relative overflow-hidden rounded-lg group h-80 ${feature.size}`}>
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${feature.image})` }}>
                   <div className="absolute inset-0 bg-gradient-to-r from-gray-900 bg-opacity-25"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-4">
