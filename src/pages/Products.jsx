@@ -10,8 +10,8 @@ export default function Products() {
   return (
     <>
       <div className="relative overflow-hidden">
-        <img src={Pattern3} alt="" className="absolute right-0 top-9 md:top-12 w-40 opacity-20" />
-        <img src={Pattern2} alt="" className="absolute left-0 top-9 md:top-12 w-40 opacity-20" />
+        <img src={Pattern3} alt="" className="absolute -right-16 md:right-0 top-10 md:top-12 w-30 md:w-40 opacity-20" />
+        <img src={Pattern2} alt="" className="absolute -left-16 md:left-0 top-10 md:top-12 w-30 md:w-40 opacity-20" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl md:text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 my-12">Products</h1>
