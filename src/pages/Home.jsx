@@ -95,16 +95,15 @@ export default function Home() {
       </div>
 
       {/* CTA Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative py-12 rounded-lg overflow-hidden">
-          {/* Background Image */}
-          <img src={CTABg} alt="Call to Action Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
-
+      <div className="relative py-24">
+        {/* Background Image */}
+        <img src={CTABg} alt="Call to Action Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Optional CTA Content */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
             <div className="flex flex-col items-center justify-center">
               <img src={LogoWhite} alt="" />
-              <h2 className="text-3xl font-bold my-4">CV. RIZKI BANGUN</h2>
+              <h2 className="text-3xl font-bold font-montserrat my-4">CV. RIZKI BANGUN</h2>
               <p className="mb-6 text-3xl font-bold text-center max-w-4xl">"High-Quality Sandblasting Equipment for Superior Surface Preparation and Industrial Finishing”</p>
               <a href="tel:+62811594546" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
                 <img src={PhoneIcon} alt="" />
