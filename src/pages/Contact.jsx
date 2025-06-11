@@ -48,7 +48,7 @@ export default function Contact() {
                   <span className="contact-card-data mb-2">kaltimku@gmail.com</span>
 
                   <a href="mailto:kaltimku@gmail.com" className="contact-button mb-2">
-                    Contact me
+                    Contact us
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#07960c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M7 7h10v10"></path>
                       <path d="M7 17 17 7"></path>
@@ -70,7 +70,7 @@ export default function Contact() {
                   <span className="contact-card-data mb-2">088-1159-9594</span>
 
                   <a href="https://api.whatsapp.com/send?phone=628811599594&text=Hello, more information!" target="_blank" className="contact-button mb-2">
-                    Contact me
+                    Contact us
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#07960c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M7 7h10v10"></path>
                       <path d="M7 17 17 7"></path>
