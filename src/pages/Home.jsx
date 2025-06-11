@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import HeroBg from "../assets/images/hero-bg.png";
+import HeroBg from "../assets/images/hero-bg-1.png";
 import MapIcon from "../assets/icons/map.svg";
 import PhoneIcon from "../assets/icons/phone.svg";
 import TrustIcon from "../assets/icons/trust.svg";
@@ -107,7 +107,7 @@ export default function Home() {
       </div>
 
       {/* About Us  */}
-      <div className="py-12 relative overflow-hidden">
+      <div className="my-12 py-12 relative overflow-hidden">
         <img src={Pattern} alt="" className="absolute right-0 -top-8 w-40 h-auto -rotate-45 -z-1 opacity-10" />
         <img src={Pattern} alt="" className="absolute left-0 -top-8 w-40 h-auto rotate-45 -z-1 opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,7 +121,14 @@ export default function Home() {
       </div>
 
       {/* visi misi  */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-12"></div>
+      <div className="my-12 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row gap-6 justify-between md:items-center">
+            <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter"></h1>
+            <p class="md:text-sm text-base md:w-1/2 text-justify font-semibold">Kenalan sama fitur spesial Menpy AI yang nggak cuma canggih, tapi juga dibuat khusus buat bantuin kamu jadi versi terbaik dari diri sendiri!</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
