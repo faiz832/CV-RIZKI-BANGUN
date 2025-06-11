@@ -219,7 +219,7 @@ export default function ArticleDetails() {
           <p class="text-xl md:text-2xl mt-4 text-center w-3/4">
             Oops! The <strong>article</strong> you are looking for was not found.
           </p>
-          <a href="/" class="mt-8 inline-block bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded">
+          <a href="/" class="mt-8 inline-block bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-full">
             Back to Home
           </a>
         </div>
@@ -247,7 +247,7 @@ export default function ArticleDetails() {
       </div>
 
       <div class="my-12 md:my-24 flex justify-center">
-        <Link to="/" class="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded transition">
+        <Link to="/" class="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
           Back to Home
         </Link>
       </div>
