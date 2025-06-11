@@ -102,10 +102,10 @@ export default function Home() {
               <img src={LogoWhite} alt="" />
               <h2 className="text-3xl font-bold my-4">CV. RIZKI BANGUN</h2>
               <p className="mb-6 text-3xl font-bold text-center max-w-4xl">"High-Quality Sandblasting Equipment for Superior Surface Preparation and Industrial Finishing”</p>
-              <Link to="/contact" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
+              <a href="tel:+62811599594" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
                 <img src={PhoneIcon} alt="" />
                 Contact Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>
