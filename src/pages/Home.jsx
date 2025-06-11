@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import HeroBg from "../assets/images/hero-bg-1.png";
 import MapIcon from "../assets/icons/map.svg";
 import PhoneIcon from "../assets/icons/phone.svg";
@@ -173,6 +174,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
