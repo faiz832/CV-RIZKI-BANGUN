@@ -114,12 +114,12 @@ export const productsByCategory = {
   4: [
     {
       name: "Sandblasting Suit",
-      about: "Protective gear for sandblasting workers.",
+      about: "Full-body protection during operations.",
       thumbnail: SandblastingSuit,
     },
     {
       name: "Sandblasting Helmet",
-      about: "Full-body protection during operations.",
+      about: "Protective gear for sandblasting workers.",
       thumbnail: SandblastingHelmet,
     },
   ],
