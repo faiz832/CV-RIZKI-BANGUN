@@ -26,10 +26,10 @@ export default function Products() {
           </div>
 
           {/* Product Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {productsByCategory[activeTab].map((product, index) => (
               <div key={index} className="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-lg hover:-translate-y-2 transition duration-300 ease-in-out transform flex flex-col justify-between">
-                <img src={product.thumbnail} alt={product.name} className="w-full h-48 shadow-md object-cover rounded-lg mb-4" loading="lazy" />
+                <img src={product.thumbnail} alt={product.name} className="w-full h-70 shadow-md object-cover rounded-lg mb-4" loading="lazy" />
                 <div className="flex flex-col flex-grow">
                   <h1 className="font-semibold text-xl mb-2">{product.name}</h1>
                   <p className="text-md text-gray-600 min-h-16">{product.about}</p>
