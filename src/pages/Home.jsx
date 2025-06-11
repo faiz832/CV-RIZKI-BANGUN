@@ -22,11 +22,12 @@ export default function Home() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[552px] md:min-h-[calc(100vh-100px)]">
         <div className="relative h-[552px] md:min-h-[calc(100vh-100px)] my-2 bg-white rounded-lg shadow-lg lg:shadow-none overflow-hidden">
           <img src={HeroBg} alt="hero-img" className="absolute top-0 right-0 w-full lg:w-1/2 h-full object-cover lg:object-right rounded-lg" />
+          <div className="lg:hidden absolute inset-0 bg-gradient-to-r from-green-900 bg-opacity-25"></div>
 
           <div className="absolute top-0 left-0 w-full h-full flex items-center">
-            <div className="px-4 md:px-8 xl:px-0 w-3/4 md:max-w-lg lg:max-w-xl xl:max-w-2xl lg:text-black">
+            <div className="px-4 md:px-8 xl:px-0 w-3/4 md:max-w-lg lg:max-w-xl xl:max-w-2xl text-white lg:text-black">
               <h1 className="text-2xl sm:text-5xl xl:text-6xl font-bold tracking-tighter font-montserrat">Supporting Your Industrial Strength With Trusted Toughness.</h1>
-              <p className="max-w-lg my-6 text-xs sm:text-base lg:text-gray-500">Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!</p>
+              <p className="max-w-lg my-6 text-xs sm:text-base text-white lg:text-gray-500">Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!</p>
 
               {/* CTA Button */}
               <div className="flex flex-col-reverse sm:flex-row gap-4">
@@ -140,13 +141,13 @@ export default function Home() {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
               {
-                title: "Vision Statement",
+                title: "Vision",
                 description: "To become a trusted supplier of sandblasting tools and materials in Indonesia, excelling in quality, service, and digital innovation.",
                 image: VisiImg1,
                 size: "lg:col-span-3 lg:row-span-2",
               },
               {
-                title: "Mission Statement",
+                title: "Mission",
                 description: "1. Provide high-quality products.\n2. Offer accessible product information.\n3. Build strong industrial relations.\n4. Innovate in digital marketing.",
                 image: VisiImg2,
                 size: "lg:col-span-2 lg:row-span-2",
