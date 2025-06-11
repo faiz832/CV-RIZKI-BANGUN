@@ -29,8 +29,8 @@ export default function Navbar() {
 
             {/* Navigation Menu */}
             <div className="flex items-center space-x-4 font-satoshi text-sm">
-              {["/", "/news", "/product", "/contact"].map((path, i) => {
-                const labels = ["Home", "News", "Product", "Contact"];
+              {["/", "/article", "/product", "/contact"].map((path, i) => {
+                const labels = ["Home", "Article", "Product", "Contact"];
                 return (
                   <NavLink key={path} to={path} className={({ isActive }) => `px-3 py-2 rounded-md ${isActive ? "font-bold text-black" : "text-gray-500"}`}>
                     {labels[i]}
