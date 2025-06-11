@@ -38,11 +38,11 @@ export default function Products() {
                   <img src={product.thumbnail} alt={product.name} className="w-full h-70 shadow-md object-cover rounded-lg mb-4" loading="lazy" />
                   <div className="flex flex-col flex-grow">
                     <h1 className="font-semibold text-xl mb-2">{product.name}</h1>
-                    <p className="text-md text-gray-600 min-h-16">{product.about}</p>
+                    <p className="text-md text-gray-600">{product.about}</p>
 
                     <div className="flex justify-end mt-auto">
                       <Link to={`/products/${product.id}`} className="inline-block mt-3 px-4 py-2 text-sm font-semibold text-black rounded-md bg-gray-100 hover:bg-gray-200 transition">
-                        Read More
+                        More Detail
                       </Link>
                     </div>
                   </div>
