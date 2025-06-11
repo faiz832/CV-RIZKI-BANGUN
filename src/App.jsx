@@ -8,6 +8,7 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ArticleDetails from "./pages/ArticleDetails";
+import ProductDetails from "./pages/ProductDetails";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/articles/:id" element={<ArticleDetails />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="/404" element={<NotFound />} />
       </Routes>
       <Footer />

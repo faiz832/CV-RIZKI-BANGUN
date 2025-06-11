@@ -1,5 +1,6 @@
 import { categories, productsByCategory } from "../data/products";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Pattern2 from "../assets/icons/pattern2.svg";
 import Pattern3 from "../assets/icons/pattern3.svg";
 
@@ -38,6 +39,12 @@ export default function Products() {
                   <div className="flex flex-col flex-grow">
                     <h1 className="font-semibold text-xl mb-2">{product.name}</h1>
                     <p className="text-md text-gray-600 min-h-16">{product.about}</p>
+
+                    <div className="flex justify-end mt-auto">
+                      <Link to={`/products/${product.id}`} className="inline-block mt-3 px-4 py-2 text-sm font-semibold text-black rounded-md bg-gray-100 hover:bg-gray-200 transition">
+                        Read More
+                      </Link>
+                    </div>
                   </div>
                 </div>
               ))}
