@@ -12,7 +12,7 @@ export default function Footer() {
                 <img src={Logo} alt="CV Rizki Bangun" className="w-10 h-10" />
                 CV. RIZKI BANGUN
               </a>
-              <p className="mt-8 text-sm max-w-xl">JL. MT. Haryono Dalam III RT.30 No. 71, Balikpapan, East Kalimantan, Indonesia, 76114</p>
+              <p className="mt-8 max-w-xl">Jl. Mt. Haryono Dalam III No.71, sungai nangka, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76114</p>
             </div>
 
             {/* Social Media Icons */}
