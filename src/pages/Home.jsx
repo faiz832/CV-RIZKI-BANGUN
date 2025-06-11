@@ -32,7 +32,7 @@ export default function Home() {
               {/* CTA Button */}
               <div className="flex gap-4">
                 {/* Visit Us Button */}
-                <a href="https://maps.app.goo.gl/mU62TXGjx26Cf7sD6" target="_blank" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-full transition">
+                <a href="https://maps.app.goo.gl/mU62TXGjx26Cf7sD6" target="_blank" className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition">
                   <img src={MapIcon} alt="" className="w-6 h-6" />
                   Visit Us
                 </a>
