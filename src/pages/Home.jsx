@@ -162,7 +162,7 @@ export default function Home() {
             ].map((feature, index) => (
               <div key={index} className={`relative overflow-hidden rounded-3xl group h-80 ${feature.size}`}>
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${feature.image})` }}>
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-600 bg-opacity-25"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-900 bg-opacity-25"></div>
                   <div className="absolute inset-0 flex flex-col justify-end p-4">
                     <h2 className="text-4xl font-bold text-white tracking-tighter mb-4">{feature.title}</h2>
                     {feature.description && <p className="w-2/3 text-white text-opacity-90 text-sm whitespace-pre-line">{feature.description}</p>}
