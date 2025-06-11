@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import HeroBg from "../assets/images/hero-bg.png";
+import MapIcon from "../assets/icons/map.svg";
+import PhoneIcon from "../assets/icons/phone.svg";
+import TrustIcon from "../assets/icons/trust.svg";
+import CertifiedIcon from "../assets/icons/certified.svg";
+import PriceIcon from "../assets/icons/price.svg";
+import CTABg from "../assets/images/cta-bg.png";
+import LogoWhite from "../assets/icons/logo-white.svg";
+import Pattern from "../assets/icons/pattern.svg";
 
 export default function Home() {
   return (
@@ -21,13 +29,13 @@ export default function Home() {
               <div className="flex gap-4">
                 {/* Visit Us Button */}
                 <a href="https://maps.app.goo.gl/mU62TXGjx26Cf7sD6" target="_blank" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-full transition">
-                  <img src="/src/assets/icons/map.svg" alt="" className="w-6 h-6" />
+                  <img src={MapIcon} alt="" className="w-6 h-6" />
                   Visit Us
                 </a>
 
                 {/* Contact Us Button */}
                 <Link to="/contact" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
-                  <img src="/src/assets/icons/phone.svg" alt="" />
+                  <img src={PhoneIcon} alt="" />
                   Contact Us
                 </Link>
               </div>
@@ -43,7 +51,7 @@ export default function Home() {
             {/* Card 1 */}
             <div className="relative flex flex-col items-center border-3 border-gray-300 rounded-lg px-6 pt-12 pb-6">
               <div className="absolute -top-6 bg-white px-2">
-                <img src="/src/assets/icons/trust.svg" alt="trust" className="w-12 h-12 opacity-50" />
+                <img src={TrustIcon} alt="trust" className="w-12 h-12 opacity-50" />
               </div>
               <p className="leading-relaxed">
                 <strong>Established since 1997</strong>, has experience
@@ -55,7 +63,7 @@ export default function Home() {
             {/* Card 2 */}
             <div className="relative flex flex-col items-center border-3 border-gray-300 rounded-lg px-6 pt-12 pb-6">
               <div className="absolute -top-6 bg-white px-2">
-                <img src="/src/assets/icons/certified.svg" alt="certified" className="w-12 h-12 opacity-50" />
+                <img src={CertifiedIcon} alt="certified" className="w-12 h-12 opacity-50" />
               </div>
               <p className="leading-relaxed">
                 <strong>Committed</strong> to providing high quality sandblasting tools
@@ -67,7 +75,7 @@ export default function Home() {
             {/* Card 3 */}
             <div className="relative flex flex-col items-center border-3 border-gray-300 rounded-lg px-6 pt-12 pb-6">
               <div className="absolute -top-6 bg-white px-2">
-                <img src="/src/assets/icons/price.svg" alt="price" className="w-12 h-12 opacity-50" />
+                <img src={PriceIcon} alt="price" className="w-12 h-12 opacity-50" />
               </div>
               <p className="leading-relaxed">
                 <strong>Offers</strong> competitive prices for each item,
@@ -79,29 +87,29 @@ export default function Home() {
         </div>
       </div>
 
-      {/* CTA Section (Full Width) */}
+      {/* CTA Section */}
       <div className="relative w-full py-12 overflow-hidden">
         {/* Background Image */}
-        <img src="/src/assets/images/cta-bg.png" alt="Call to Action Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
+        <img src={CTABg} alt="Call to Action Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
 
         {/* Optional CTA Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="flex flex-col items-center justify-center">
-            <img src="/src/assets/icons/logo-white.svg" alt="" />
+            <img src={LogoWhite} alt="" />
             <h2 className="text-3xl font-bold my-4">CV. RIZKI BANGUN</h2>
             <p className="mb-6 text-3xl font-bold text-center max-w-4xl">"High-Quality Sandblasting Equipment for Superior Surface Preparation and Industrial Finishing”</p>
             <Link to="/contact" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
-              <img src="/src/assets/icons/phone.svg" alt="" />
+              <img src={PhoneIcon} alt="" />
               Contact Now
             </Link>
           </div>
         </div>
       </div>
 
-      {/* About us  */}
+      {/* About Us  */}
       <div className="py-12 relative overflow-hidden">
-        <img src="src/assets/icons/pattern.svg" alt="" className="absolute right-0 -top-8 w-40 h-auto -rotate-45 -z-1 opacity-10" />
-        <img src="src/assets/icons/pattern.svg" alt="" className="absolute left-0 -top-8 w-40 h-auto rotate-45 -z-1 opacity-10" />
+        <img src={Pattern} alt="" className="absolute right-0 -top-8 w-40 h-auto -rotate-45 -z-1 opacity-10" />
+        <img src={Pattern} alt="" className="absolute left-0 -top-8 w-40 h-auto rotate-45 -z-1 opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold font-lexend text-center">About Us</h1>
           <p className="text-xl mt-6 text-center">

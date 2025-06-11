@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Logo from "../assets/icons/logo.svg";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
             {/* Brand Logo */}
             <div className="flex items-center">
               <NavLink to="/" className="flex items-center gap-2">
-                <img src="/src/assets/icons/logo.svg" alt="CV Rizki Bangun" className="h-6" />
+                <img src={Logo} alt="CV Rizki Bangun" className="h-6" />
                 <h1 className="text-xl font-bold font-montserrat text-[#07960c]">CV. RIZKI BANGUN</h1>
               </NavLink>
             </div>
