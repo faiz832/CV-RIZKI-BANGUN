@@ -9,6 +9,10 @@ import PriceIcon from "../assets/icons/price.svg";
 import CTABg from "../assets/images/cta-bg.png";
 import LogoWhite from "../assets/icons/logo-white.svg";
 import Pattern from "../assets/icons/pattern.svg";
+import VisiImg1 from "../assets/images/visi-1.png";
+import VisiImg2 from "../assets/images/visi-2.png";
+import VisiImg3 from "../assets/images/visi-3.png";
+import VisiImg4 from "../assets/images/visi-4.png";
 
 export default function Home() {
   return (
@@ -123,9 +127,49 @@ export default function Home() {
       {/* visi misi  */}
       <div className="my-12 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row gap-6 justify-between md:items-center">
-            <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter"></h1>
-            <p class="md:text-sm text-base md:w-1/2 text-justify font-semibold">Kenalan sama fitur spesial Menpy AI yang nggak cuma canggih, tapi juga dibuat khusus buat bantuin kamu jadi versi terbaik dari diri sendiri!</p>
+          <div className="flex flex-col md:flex-row gap-6 justify-between md:items-center">
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">Vision & Mission</h1>
+            <p className="md:text-sm text-base md:w-1/2 text-justify font-semibold">Get to know our commitment and vision as a reliable provider of sandblasting tools and materials across Indonesia.</p>
+          </div>
+
+          {/* Feature Grid */}
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+            {[
+              {
+                title: "Vision Statement",
+                description: "To become a trusted supplier of sandblasting tools and materials in Indonesia, excelling in quality, service, and digital innovation.",
+                image: VisiImg1,
+                size: "lg:col-span-3 lg:row-span-2",
+              },
+              {
+                title: "Mission Statement",
+                description: "1. Provide high-quality products.\n2. Offer accessible product information.\n3. Build strong industrial relations.\n4. Innovate in digital marketing.",
+                image: VisiImg2,
+                size: "lg:col-span-2 lg:row-span-2",
+              },
+              {
+                title: "Ready Stock Availability",
+                description: "We keep a well-managed warehouse to ensure immediate availability for all industrial needs.",
+                image: VisiImg3,
+                size: "lg:col-span-2 lg:row-span-2",
+              },
+              {
+                title: "Fast & Secure Delivery",
+                description: "Timely and safe delivery of all products throughout Indonesia is our standard commitment.",
+                image: VisiImg4,
+                size: "lg:col-span-3 lg:row-span-2",
+              },
+            ].map((feature, index) => (
+              <div key={index} className={`relative overflow-hidden rounded-3xl group h-80 ${feature.size}`}>
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${feature.image})` }}>
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-600 bg-opacity-25"></div>
+                  <div className="absolute inset-0 flex flex-col justify-end p-4">
+                    <h2 className="text-4xl font-bold text-white tracking-tighter mb-4">{feature.title}</h2>
+                    {feature.description && <p className="w-2/3 text-white text-opacity-90 text-sm whitespace-pre-line">{feature.description}</p>}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
