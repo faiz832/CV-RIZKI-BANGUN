@@ -31,13 +31,13 @@ export default function Home() {
               {/* CTA Button */}
               <div className="flex gap-4">
                 {/* Visit Us Button */}
-                <a href="https://maps.app.goo.gl/mU62TXGjx26Cf7sD6" target="_blank" className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded transition">
+                <a href="https://maps.app.goo.gl/mU62TXGjx26Cf7sD6" target="_blank" className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition">
                   <img src={MapIcon} alt="" className="w-6 h-6" />
                   Visit Us
                 </a>
 
                 {/* Contact Us Button */}
-                <Link to="/contact" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded transition">
+                <Link to="/contact" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
                   <img src={PhoneIcon} alt="" />
                   Contact Us
                 </Link>
@@ -91,20 +91,22 @@ export default function Home() {
       </div>
 
       {/* CTA Section */}
-      <div className="relative w-full py-12 overflow-hidden">
-        {/* Background Image */}
-        <img src={CTABg} alt="Call to Action Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative py-12 rounded-3xl overflow-hidden">
+          {/* Background Image */}
+          <img src={CTABg} alt="Call to Action Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
 
-        {/* Optional CTA Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <div className="flex flex-col items-center justify-center">
-            <img src={LogoWhite} alt="" />
-            <h2 className="text-3xl font-bold my-4">CV. RIZKI BANGUN</h2>
-            <p className="mb-6 text-3xl font-bold text-center max-w-4xl">"High-Quality Sandblasting Equipment for Superior Surface Preparation and Industrial Finishing”</p>
-            <Link to="/contact" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded transition">
-              <img src={PhoneIcon} alt="" />
-              Contact Now
-            </Link>
+          {/* Optional CTA Content */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div className="flex flex-col items-center justify-center">
+              <img src={LogoWhite} alt="" />
+              <h2 className="text-3xl font-bold my-4">CV. RIZKI BANGUN</h2>
+              <p className="mb-6 text-3xl font-bold text-center max-w-4xl">"High-Quality Sandblasting Equipment for Superior Surface Preparation and Industrial Finishing”</p>
+              <Link to="/contact" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
+                <img src={PhoneIcon} alt="" />
+                Contact Now
+              </Link>
+            </div>
           </div>
         </div>
       </div>
