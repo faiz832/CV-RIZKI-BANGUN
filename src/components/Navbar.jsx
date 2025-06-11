@@ -32,7 +32,7 @@ export default function Navbar() {
               {["/", "/articles", "/products", "/contact"].map((path, i) => {
                 const labels = ["Home", "Articles", "Products", "Contact"];
                 return (
-                  <NavLink key={path} to={path} className={({ isActive }) => `px-3 py-2 rounded-md ${isActive ? "font-bold text-black" : "text-gray-500"}`}>
+                  <NavLink key={path} to={path} className={({ isActive }) => `px-3 py-2 rounded-md uppercase ${isActive ? "font-bold text-black" : "text-gray-500"}`}>
                     {labels[i]}
                   </NavLink>
                 );
