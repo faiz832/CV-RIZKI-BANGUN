@@ -104,6 +104,17 @@ export default function Contact() {
             </form>
           </div>
         </div>
+
+        <div className="mt-12 mb-24">
+          <h1 className="text-3xl font-bold text-center mb-12">Or Visit Us Here</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.869995460516!2d116.87205300000001!3d-1.2492467999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1468cad2c11c9%3A0x227c6c91d6aceec7!2sCV.%20Rizki%20Bangun!5e0!3m2!1sid!2sid!4v1749638184129!5m2!1sid!2sid"
+            loading="lazy"
+            title="CV. Rizki Bangun"
+            className="shadow-xl rounded w-3xl h-96 mx-auto"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </>
   );
