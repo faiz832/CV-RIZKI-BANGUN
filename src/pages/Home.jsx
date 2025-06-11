@@ -115,8 +115,8 @@ export default function Home() {
         <img src={Pattern} alt="" className="absolute right-0 -top-8 w-40 h-auto -rotate-45 -z-1 opacity-10" />
         <img src={Pattern} alt="" className="absolute left-0 -top-8 w-40 h-auto rotate-45 -z-1 opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold font-lexend text-center">About Us</h1>
-          <p className="text-xl mt-6 text-center">
+          <h1 className="text-5xl font-bold tracking-tighter text-center">About Us</h1>
+          <p className="text-xl mt-6 text-center max-w-4xl mx-auto">
             CV. Rizki Bangun is a company that supplies sandblasting tools and materials without service installation, catering to various industrial needs. The company was founded by Mr. Nanang on August 15, 1997, South Balikpapan
             District, Balikpapan City, East Kalimantan. It is currently led by Mr. Susanto, and is located at Jln. MT. Haryono Dalam III. <br /> <br /> CV. Rizki Bangun serving businesses primarily in the Kalimantan region. The products
             offered include various types of sandblasting equipment and abrasive materials, specifically designed to assist industries in cleaning and preparing surfaces before painting or recoating processes.
