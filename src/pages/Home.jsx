@@ -97,7 +97,7 @@ export default function Home() {
       {/* CTA Section */}
       <div className="relative py-24">
         {/* Background Image */}
-        <img src={CTABg} alt="Call to Action Background" className="absolute inset-0 w-full h-full object-cover z-[-1]" />
+        <img src={CTABg} alt="Call to Action Background" className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Optional CTA Content */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
