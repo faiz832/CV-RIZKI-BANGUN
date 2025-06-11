@@ -24,13 +24,13 @@ export default function Contact() {
   return (
     <>
       <div className="relative overflow-hidden">
-        <img src={Pattern3} alt="" className="absolute right-0 top-12 w-40 opacity-20" />
-        <img src={Pattern2} alt="" className="absolute left-0 top-12 w-40 opacity-20" />
+        <img src={Pattern3} alt="" className="absolute right-0 top-9 md:top-12 w-40 opacity-20" />
+        <img src={Pattern2} alt="" className="absolute left-0 top-9 md:top-12 w-40 opacity-20" />
 
         <div className="contact section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-6xl w-max mx-auto font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 my-12">Contact Us</h1>
+          <h1 className="text-5xl md:text-6xl w-max mx-auto font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 my-12">Contact Us</h1>
 
-          <p className="w-full lg:w-2/4 mx-auto text-center text-lg">Get in touch with us and let us know how we can help you.</p>
+          <p className="w-full lg:w-2/4 mx-auto text-center sm:text-lg">Get in touch with us and let us know how we can help you.</p>
 
           <div className="contact-container grid mt-12">
             <div className="contact-content">
@@ -137,7 +137,7 @@ export default function Contact() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.869995460516!2d116.87205300000001!3d-1.2492467999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1468cad2c11c9%3A0x227c6c91d6aceec7!2sCV.%20Rizki%20Bangun!5e0!3m2!1sid!2sid!4v1749638184129!5m2!1sid!2sid"
               loading="lazy"
               title="CV. Rizki Bangun"
-              className="shadow-xl rounded w-3xl h-96 mx-auto"
+              className="shadow-xl rounded w-full max-w-3xl h-96 mx-auto"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
