@@ -23,16 +23,16 @@ export default function Navbar() {
             <div className="flex items-center">
               <NavLink to="/" className="flex items-center gap-2">
                 <img src={Logo} alt="CV Rizki Bangun" className="h-6" />
-                <h1 className="text-xl font-bold font-montserrat text-[#07960c]">CV. RIZKI BANGUN</h1>
+                <h1 className="hidden sm:block text-xl font-bold font-montserrat text-[#07960c]">CV. RIZKI BANGUN</h1>
               </NavLink>
             </div>
 
             {/* Navigation Menu */}
-            <div className="flex items-center space-x-4 font-satoshi text-sm">
+            <div className="flex items-center space-x-3 md:space-x-8 font-satoshi text-xs md:text-sm">
               {["/", "/articles", "/products", "/contact"].map((path, i) => {
                 const labels = ["Home", "Articles", "Products", "Contact"];
                 return (
-                  <NavLink key={path} to={path} className={({ isActive }) => `px-3 py-2 rounded-md uppercase ${isActive ? "font-bold text-black" : "text-gray-500"}`}>
+                  <NavLink key={path} to={path} className={({ isActive }) => `rounded-md uppercase ${isActive ? "font-bold text-black" : "text-gray-500"}`}>
                     {labels[i]}
                   </NavLink>
                 );

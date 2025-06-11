@@ -24,15 +24,15 @@ export default function Home() {
           <img src={HeroBg} alt="hero-img" className="absolute top-0 right-0 w-full lg:w-1/2 h-full object-cover lg:object-right rounded-lg" />
 
           <div className="absolute top-0 left-0 w-full h-full flex items-center">
-            <div className="px-4 md:px-8 xl:px-0 w-3/4 md:max-w-lg lg:max-w-xl xl:max-w-2xl text-white lg:text-black">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-6xl font-bold tracking-tighter font-montserrat">Supporting Your Industrial Strength With Trusted Toughness.</h1>
-              <p className="max-w-lg my-6 text-gray-500">Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!</p>
+            <div className="px-4 md:px-8 xl:px-0 w-3/4 md:max-w-lg lg:max-w-xl xl:max-w-2xl lg:text-black">
+              <h1 className="text-2xl sm:text-5xl xl:text-6xl font-bold tracking-tighter font-montserrat">Supporting Your Industrial Strength With Trusted Toughness.</h1>
+              <p className="max-w-lg my-6 text-xs sm:text-base lg:text-gray-500">Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!</p>
 
               {/* CTA Button */}
-              <div className="flex gap-4">
+              <div className="flex flex-col-reverse sm:flex-row gap-4">
                 {/* Visit Us Button */}
-                <a href="https://maps.app.goo.gl/mU62TXGjx26Cf7sD6" target="_blank" className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition">
-                  <img src={MapIcon} alt="" className="w-6 h-6" />
+                <a href="https://maps.app.goo.gl/mU62TXGjx26Cf7sD6" target="_blank" className="text-sm sm:text-base w-max inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition">
+                  <img src={MapIcon} alt="" className="w-6 h-6 hidden md:block" />
                   Visit Us
                 </a>
 
@@ -40,9 +40,9 @@ export default function Home() {
                 <a
                   href="https://api.whatsapp.com/send?phone=62811594546&text=Hello, more information!"
                   target="_blank"
-                  className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition"
+                  className="text-sm sm:text-base w-max inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition"
                 >
-                  <img src={PhoneIcon} alt="" />
+                  <img src={PhoneIcon} alt="" className="hidden md:block" />
                   Contact Us
                 </a>
               </div>
@@ -103,8 +103,8 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
             <div className="flex flex-col items-center justify-center">
               <img src={LogoWhite} alt="" />
-              <h2 className="text-3xl font-bold font-montserrat my-4">CV. RIZKI BANGUN</h2>
-              <p className="mb-6 text-3xl font-bold text-center max-w-4xl">"High-Quality Sandblasting Equipment for Superior Surface Preparation and Industrial Finishing”</p>
+              <h2 className="text-xl md:text-3xl text-center font-bold font-montserrat my-4">CV. RIZKI BANGUN</h2>
+              <p className="mb-6 text-xl md:text-3xl font-bold text-center max-w-4xl">"High-Quality Sandblasting Equipment for Superior Surface Preparation and Industrial Finishing”</p>
               <a href="tel:+62811594546" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
                 <img src={PhoneIcon} alt="" />
                 Contact Now
@@ -115,12 +115,12 @@ export default function Home() {
       </div>
 
       {/* About Us  */}
-      <div className="my-12 py-12 relative overflow-hidden">
-        <img src={Pattern} alt="" className="absolute right-0 -top-8 w-40 h-auto -rotate-45 -z-1 opacity-10" />
-        <img src={Pattern} alt="" className="absolute left-0 -top-8 w-40 h-auto rotate-45 -z-1 opacity-10" />
+      <div className="pt-0 my-12 md:py-12 relative overflow-hidden">
+        <img src={Pattern} alt="" className="absolute -right-30 md:right-0 -top-8 w-40 h-auto -rotate-45 -z-1 opacity-10" />
+        <img src={Pattern} alt="" className="absolute -left-30 md:left-0 -top-8 w-40 h-auto rotate-45 -z-1 opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-bold tracking-tighter text-center">About Us</h1>
-          <p className="text-xl mt-6 text-center max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-center">About Us</h1>
+          <p className="md:text-xl mt-6 text-center max-w-4xl mx-auto">
             CV. Rizki Bangun is a company that supplies sandblasting tools and materials without service installation, catering to various industrial needs. The company was founded by Mr. Nanang on August 15, 1997, South Balikpapan
             District, Balikpapan City, East Kalimantan. It is currently led by Mr. Susanto, and is located at Jln. MT. Haryono Dalam III. <br /> <br /> CV. Rizki Bangun serving businesses primarily in the Kalimantan region. The products
             offered include various types of sandblasting equipment and abrasive materials, specifically designed to assist industries in cleaning and preparing surfaces before painting or recoating processes.
@@ -132,8 +132,8 @@ export default function Home() {
       <div className="my-12 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-6 justify-between md:items-center">
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">Vision & Mission</h1>
-            <p className="md:text-sm text-base md:w-1/2 text-justify font-semibold">Get to know our commitment and vision as a reliable provider of sandblasting tools and materials across Indonesia.</p>
+            <h1 className="text-center md:text-left text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter">Vision & Mission</h1>
+            <p className="md:text-sm text-center text-base md:w-1/2 md:text-justify font-semibold">Get to know our commitment and vision as a reliable provider of sandblasting tools and materials across Indonesia.</p>
           </div>
 
           {/* Feature Grid */}
@@ -179,7 +179,7 @@ export default function Home() {
       </div>
 
       {/* Certified section  */}
-      <section className="py-16 px-4 sm:px-8 lg:px-20 bg-white">
+      <section className="pt-0 pb-16 sm:py-16 px-4 sm:px-8 lg:px-20 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">Company Certifications</h2>
 

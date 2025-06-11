@@ -8,11 +8,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Logo and Description */}
             <div className="">
-              <a href="/" className="text-3xl font-bold mr-4 flex items-center gap-2 font-montserrat text-[#07960c]">
-                <img src={Logo} alt="CV Rizki Bangun" className="w-10 h-10" />
+              <a href="/" className="text-xl md:text-3xl font-bold mr-4 flex items-center gap-2 font-montserrat text-[#07960c]">
+                <img src={Logo} alt="CV Rizki Bangun" className="w-8 h-8 md:w-10 md:h-10" />
                 CV. RIZKI BANGUN
               </a>
-              <p className="mt-8 max-w-xl">Jl. Mt. Haryono Dalam III No.71, sungai nangka, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76114</p>
+              <p className="text-sm md:text-base mt-8 max-w-xl">Jl. Mt. Haryono Dalam III No.71, sungai nangka, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76114</p>
             </div>
 
             {/* Social Media Icons */}
