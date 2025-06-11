@@ -41,7 +41,7 @@ export default function Home() {
                 <a
                   href="https://api.whatsapp.com/send?phone=62811594546&text=Hello, more information!"
                   target="_blank"
-                  className="text-sm sm:text-base w-max inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition"
+                  className="text-sm sm:text-base w-max inline-flex items-center gap-2 bg-white md:bg-green-700 md:hover:bg-green-800 text-black md:text-white font-semibold py-2 px-4 rounded-full transition"
                 >
                   <img src={PhoneIcon} alt="" className="hidden md:block" />
                   Contact Us
