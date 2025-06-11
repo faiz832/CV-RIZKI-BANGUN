@@ -34,6 +34,35 @@ export default function Contact() {
 
           <div className="contact-container grid mt-12">
             <div className="contact-content">
+              <form ref={form} onSubmit={sendEmail} className="contact-form">
+                <div className="contact-form-div">
+                  <label htmlFor="" className="contact-form-tag">
+                    Name
+                  </label>
+                  <input type="text" name="name" className="contact-form-input" placeholder="Insert your name" />
+                </div>
+
+                <div className="contact-form-div">
+                  <label htmlFor="" className="contact-form-tag">
+                    Email
+                  </label>
+                  <input type="email" name="email" className="contact-form-input" placeholder="Insert your email" />
+                </div>
+
+                <div className="contact-form-div contact-form-area">
+                  <label htmlFor="" className="contact-form-tag">
+                    Message
+                  </label>
+                  <textarea name="message" cols="30" rows="10" className="contact-form-input" placeholder="Write your message here!"></textarea>
+                </div>
+
+                <button type="submit" className="cursor-pointer inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded transition">
+                  Send
+                </button>
+              </form>
+            </div>
+
+            <div className="contact-content">
               <div className="contact-info">
                 <div className="contact-card">
                   <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto mb-2">
@@ -99,35 +128,6 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-            </div>
-
-            <div className="contact-content">
-              <form ref={form} onSubmit={sendEmail} className="contact-form">
-                <div className="contact-form-div">
-                  <label htmlFor="" className="contact-form-tag">
-                    Name
-                  </label>
-                  <input type="text" name="name" className="contact-form-input" placeholder="Insert your name" />
-                </div>
-
-                <div className="contact-form-div">
-                  <label htmlFor="" className="contact-form-tag">
-                    Email
-                  </label>
-                  <input type="email" name="email" className="contact-form-input" placeholder="Insert your email" />
-                </div>
-
-                <div className="contact-form-div contact-form-area">
-                  <label htmlFor="" className="contact-form-tag">
-                    Message
-                  </label>
-                  <textarea name="message" cols="30" rows="10" className="contact-form-input" placeholder="Write your message here!"></textarea>
-                </div>
-
-                <button type="submit" className="cursor-pointer inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded transition">
-                  Send
-                </button>
-              </form>
             </div>
           </div>
 
