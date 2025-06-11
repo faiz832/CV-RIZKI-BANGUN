@@ -7,14 +7,14 @@ export default function Articles() {
   return (
     <>
       <div className="relative overflow-hidden">
-        <img src={Pattern3} alt="" className="absolute right-0 top-12 w-40 opacity-20" />
-        <img src={Pattern2} alt="" className="absolute left-0 top-12 w-40 opacity-20" />
+        <img src={Pattern3} alt="" className="absolute right-0 top-9 md:top-12 w-40 opacity-20" />
+        <img src={Pattern2} alt="" className="absolute left-0 top-9 md:top-12 w-40 opacity-20" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 my-12">Articles</h1>
-          <p className="w-full lg:w-2/4 mx-auto text-center text-lg">Explore expert insights and industry knowledge about sandblasting, surface preparation, and equipment maintenance.</p>
+          <h1 className="text-5xl md:text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 my-12">Articles</h1>
+          <p className="w-full md:w-2/4 mx-auto text-center text-base sm:text-lg">Explore expert insights and industry knowledge about sandblasting, surface preparation, and equipment maintenance.</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6 mt-12 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12 mb-20">
             {articles.map((article, id) => (
               <div key={id} className="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-lg hover:-translate-y-2 transition duration-300 ease-in-out transform flex flex-col justify-between">
                 <img src={article.image} alt={article.title} className="w-full h-48 shadow-md object-cover rounded-lg mb-4" loading="lazy" />

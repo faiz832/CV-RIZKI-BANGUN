@@ -5,14 +5,14 @@ export default function Footer() {
     <footer className="border-t border-gray-200">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative pb-4 pt-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-12">
             {/* Logo and Description */}
             <div className="">
               <a href="/" className="text-xl md:text-3xl font-bold mr-4 flex items-center gap-2 font-montserrat text-[#07960c]">
                 <img src={Logo} alt="CV Rizki Bangun" className="w-8 h-8 md:w-10 md:h-10" />
                 CV. RIZKI BANGUN
               </a>
-              <p className="text-sm md:text-base mt-8 max-w-xl">Jl. Mt. Haryono Dalam III No.71, sungai nangka, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76114</p>
+              <p className="text-sm md:text-base mt-4 sm:mt-8 max-w-xl">Jl. Mt. Haryono Dalam III No.71, sungai nangka, Kecamatan Balikpapan Selatan, Kota Balikpapan, Kalimantan Timur 76114</p>
             </div>
 
             {/* Social Media Icons */}
@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <hr className="border-gray-200 sm:mx-auto mt-8 mb-4" />
+          <hr className="border-gray-200 sm:mx-auto mt-4 sm:mt-8 mb-4" />
 
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-between text-xs text-gray-500">
             <span className="text-center">
