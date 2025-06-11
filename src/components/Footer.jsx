@@ -1,14 +1,14 @@
-import Logo from "../assets/icons/logo-white.svg";
+import Logo from "../assets/icons/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-black">
+    <footer className="border-t border-gray-200">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative pb-6 pt-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Logo and Description */}
-            <div className="text-white">
-              <a href="/" className="text-3xl font-bold mr-4 flex items-center gap-2 font-montserrat">
+            <div className="">
+              <a href="/" className="text-3xl font-bold mr-4 flex items-center gap-2 font-montserrat text-[#07960c]">
                 <img src={Logo} alt="CV Rizki Bangun" className="w-10 h-10" />
                 CV. RIZKI BANGUN
               </a>
@@ -52,9 +52,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <hr className="my-8 border-white sm:mx-auto lg:my-8" />
+          <hr className="my-8 border-gray-200 sm:mx-auto lg:my-8" />
 
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mt-8 text-white text-xs">
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mt-8 text-xs text-gray-500">
             <span className="text-center">
               © 2025{" "}
               <a href="/" className="hover:underline">
