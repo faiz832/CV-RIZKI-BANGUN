@@ -238,7 +238,7 @@ export default function ArticleDetails() {
         <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
       </div>
 
-      <div className="mt-12 md:mt-24 max-w-3xl mx-auto text-lg">
+      <div className="mt-12 md:mt-24 max-w-3xl mx-auto md:text-lg">
         <div
           dangerouslySetInnerHTML={{
             __html: article.content.trim().replace(/\n/g, "<br />"),
