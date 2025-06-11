@@ -14,6 +14,8 @@ import VisiImg1 from "../assets/images/visi-1.png";
 import VisiImg2 from "../assets/images/visi-2.png";
 import VisiImg3 from "../assets/images/visi-3.png";
 import VisiImg4 from "../assets/images/visi-4.png";
+import Certificate1 from "../assets/images/certificate-1.png";
+import Certificate2 from "../assets/images/certificate-2.png";
 
 export default function Home() {
   return (
@@ -174,6 +176,41 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Certified section  */}
+      <section className="py-16 px-4 sm:px-8 lg:px-20 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">Company Certifications</h2>
+
+          <div className="space-y-16">
+            {[
+              {
+                title: "Official Support Letter – Airblast Equipment Indonesia",
+                description: "Leading specialist with +20 years of experience in the field of Surface Preparation and Coating since 1997.",
+                image: Certificate1,
+                reverse: false,
+              },
+              {
+                title: "Authorized Distributor Certificate – Graco Inc.",
+                description:
+                  "CV. Rizki Bangun is officially certified as an Authorized Distributor of Graco Inc. for the Kalimantan–Indonesia region. This certification acknowledges our role in supplying Graco’s high-performance protective coating and foam equipment, widely recognized in the global industrial market.",
+                image: Certificate2,
+                reverse: true,
+              },
+            ].map((cert, idx) => (
+              <div key={idx} className={`flex flex-col ${cert.reverse ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-8 md:gap-16`}>
+                <div className="md:w-1/2">
+                  <img src={cert.image} alt={cert.title} className="w-full h-auto object-contain" />
+                </div>
+                <div className="md:w-1/2 text-center md:text-left">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">{cert.title}</h3>
+                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{cert.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <Footer />
