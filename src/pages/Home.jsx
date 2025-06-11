@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import HeroBg from "../assets/images/hero-bg-1.png";
 import MapIcon from "../assets/icons/map.svg";
 import PhoneIcon from "../assets/icons/phone.svg";
@@ -20,8 +18,6 @@ import Certificate2 from "../assets/images/certificate-2.png";
 export default function Home() {
   return (
     <>
-      <Navbar />
-
       {/* Hero Section */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[552px] md:min-h-[calc(100vh-100px)]">
         <div className="relative h-[552px] md:min-h-[calc(100vh-100px)] my-2 bg-white rounded-3xl shadow-lg lg:shadow-none overflow-hidden">
@@ -211,9 +207,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 }
