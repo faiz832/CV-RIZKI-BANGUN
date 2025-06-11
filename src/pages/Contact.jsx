@@ -2,6 +2,8 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../css/contact.css";
 import Pattern from "../assets/icons/pattern.svg";
+import PatternRight from "../assets/icons/pattern2.svg";
+import PatternLeft from "../assets/icons/pattern3.svg";
 
 export default function Contact() {
   const form = useRef();
@@ -9,7 +11,7 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_qwjvuqq", "template_62ma6jg", form.current, "oLfZFvb5ZBKQSRs9p").then(
+    emailjs.sendForm("service_", "template_", form.current, "oLfZ").then(
       (result) => {
         window.alert("Message Sended!");
         e.target.reset();
@@ -27,7 +29,16 @@ export default function Contact() {
         <img src={Pattern} alt="" className="absolute left-0 top-0 w-40 h-auto rotate-45 -z-1 opacity-10" />
 
         <div className="contact section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 my-12">Contact Us</h1>
+          <div className="flex items-center justify-center relative my-12">
+            {/* Left Pattern */}
+            <img src={PatternLeft} alt="" className="absolute left-0 top-1/2 transform -translate-y-1/2 w-16 sm:w-20 md:w-24 opacity-70" />
+
+            {/* Contact Title */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400">Contact Us</h1>
+
+            {/* Right Pattern (mirrored) */}
+            <img src={PatternRight} alt="" className="absolute right-0 top-1/2 transform -translate-y-1/2 w-16 sm:w-20 md:w-24 opacity-70" />
+          </div>
           <p className="w-full lg:w-2/4 mx-auto text-center text-lg">Get in touch with us and let us know how we can help you.</p>
 
           <div className="contact-container grid mt-12">
