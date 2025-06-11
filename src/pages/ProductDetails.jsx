@@ -228,9 +228,9 @@ export default function ProductDetails() {
 
   return (
     <div>
-      <section className="py-16 px-4 sm:px-8 lg:px-20 bg-white">
+      <section className="py-8 md:py-16 px-4 sm:px-8 lg:px-20 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-8 md:gap-16">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="md:w-1/2">
               <img src={product.thumbnail} alt={product.name} className="w-full h-auto object-contain" />
             </div>
