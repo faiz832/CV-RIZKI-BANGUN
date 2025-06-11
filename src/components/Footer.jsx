@@ -20,12 +20,12 @@ export default function Footer() {
               {[
                 {
                   name: "Facebook",
-                  url: "https://www.facebook.com/",
+                  url: "https://www.facebook.com/elcometer.sandblasting.balikpapan/",
                   icon: <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z" />,
                 },
                 {
                   name: "Instagram",
-                  url: "https://www.instagram.com/",
+                  url: "https://www.instagram.com/cv.rizkibangun/",
                   icon: (
                     <path
                       fillRule="evenodd"
@@ -36,7 +36,7 @@ export default function Footer() {
                 },
                 {
                   name: "Whatsapp",
-                  url: "https://api.whatsapp.com/send?phone=628811599594&text=Hello, more information!",
+                  url: "https://api.whatsapp.com/send?phone=62811599594&text=Hello, more information!",
                   icon: (
                     <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path
