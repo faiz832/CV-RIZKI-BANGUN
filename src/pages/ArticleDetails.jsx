@@ -247,8 +247,8 @@ export default function ArticleDetails() {
       </div>
 
       <div class="my-12 md:my-24 flex justify-center">
-        <Link to="/" class="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
-          Back to Home
+        <Link to="/articles" class="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
+          Back to Article
         </Link>
       </div>
     </div>

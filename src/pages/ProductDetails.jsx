@@ -235,8 +235,11 @@ export default function ProductDetails() {
               <img src={product.thumbnail} alt={product.name} className="w-full h-auto object-contain" />
             </div>
             <div className="md:w-1/2 text-center md:text-left">
-              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">{product.name}</h3>
+              <h3 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-3">{product.name}</h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{product.about}</p>
+              <Link to="/products" class="mt-6 inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
+                Back to Products
+              </Link>
             </div>
           </div>
         </div>
