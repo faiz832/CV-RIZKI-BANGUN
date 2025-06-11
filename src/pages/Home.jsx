@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* visi misi  */}
+      {/* Vision and Mission */}
       <div className="my-12 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-6 justify-between md:items-center">
