@@ -1,15 +1,19 @@
 import { useParams, Link } from "react-router-dom";
 import { allProducts } from "../data/products";
+import { useState } from "react";
 
 export default function ProductDetails() {
   const { id } = useParams();
   const product = allProducts.find((item) => item.id === id);
 
+  const imageOptions = [product.thumbnail, ...product.detailsImg]; // ← pindahkan setelah pengecekan product
+  const [mainImage, setMainImage] = useState(product.thumbnail);
+
   if (!product) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen relative flex items-start">
-        <div class="flex flex-col items-center w-full pb-16">
-          <svg width="100" height="100" viewBox="0 0 584 490" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-1/2 h-1/2 lg:w-4/12 lg:h-4/12">
+        <div className="flex flex-col items-center w-full pb-16">
+          <svg width="100" height="100" viewBox="0 0 584 490" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-1/2 h-1/2 lg:w-4/12 lg:h-4/12">
             <g clip-path="url(#clip0_35_1269)">
               <path
                 d="M446.608 325.091L468.177 341.027C479.033 326.657 493.186 308.33 503.715 292.216C504.641 290.799 503.241 289.004 501.645 289.569C491.525 293.15 482.046 299.188 475.762 295.951C473.539 294.806 471.243 292.719 468.917 293.64C467.898 294.043 467.186 294.956 466.524 295.829C458.569 306.326 450.614 316.823 446.606 325.091H446.608Z"
@@ -218,7 +222,7 @@ export default function ProductDetails() {
           <p className="text-xl md:text-2xl mt-4 text-center w-3/4">
             Oops! The <strong>product</strong> you are looking for was not found.
           </p>
-          <Link to="/" class="mt-8 inline-block bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-full">
+          <Link to="/" className="mt-8 inline-block bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-full">
             Back to Home
           </Link>
         </div>
@@ -228,16 +232,33 @@ export default function ProductDetails() {
 
   return (
     <div>
-      <section className="py-8 md:py-16 px-4 sm:px-8 lg:px-20 bg-white">
+      <section className="py-8 md:pb-16 px-4 sm:px-8 lg:px-20 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-            <div className="md:w-1/2">
-              <img src={product.thumbnail} alt={product.name} className="w-full h-auto object-contain" />
+            <div className="md:w-1/2 w-full">
+              {/* Display utama */}
+              <div className="w-full aspect-square overflow-hidden rounded-lg">
+                <img src={mainImage} alt={product.name} className="w-full h-full object-cover transition duration-300" />
+              </div>
+
+              {/* Thumbnails */}
+              <div className="grid grid-cols-6 gap-3 mt-4">
+                {imageOptions.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`${product.name} thumbnail ${index}`}
+                    onClick={() => setMainImage(img)}
+                    className={`aspect-square object-cover w-full rounded-lg cursor-pointer border-2 transition duration-300 ${mainImage === img ? "border-green-600 opacity-100" : "border-transparent opacity-50 hover:opacity-80"}`}
+                  />
+                ))}
+              </div>
             </div>
+
             <div className="md:w-1/2 text-center md:text-left">
               <h3 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-3">{product.name}</h3>
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{product.about}</p>
-              <Link to="/products" class="mt-6 inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
+              <Link to="/products" className="mt-6 inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
                 Back to Products
               </Link>
             </div>
