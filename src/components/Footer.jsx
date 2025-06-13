@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <hr className="border-gray-500 sm:mx-auto mt-4 sm:mt-8 mb-4" />
+          <hr className="border-gray-400 sm:mx-auto mt-4 sm:mt-8 mb-4" />
 
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-between text-xs text-gray-500">
             <span className="text-center">
