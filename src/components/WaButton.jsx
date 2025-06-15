@@ -1,7 +1,12 @@
 export default function WaButton() {
   return (
     <div className="fixed bottom-12 right-12 z-50 bg-green-500 p-3 rounded-full">
-      <a href="" target="_blank" rel="noopener noreferrer" className="group relative h-fit transition-all duration-200 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] -pb-2 rounded-full shadow-md">
+      <a
+        href="https://api.whatsapp.com/send?phone=62811594546&text=Hello, more information!"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative h-fit transition-all duration-200 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] -pb-2 rounded-full shadow-md"
+      >
         <span className="tooltip absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full bg-white text-xs py-1 px-2 rounded-md shadow-md opacity-0 group-hover:opacity-100 group-hover:-top-6 transition-all duration-300 ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] pointer-events-none">
           WhatsApp
         </span>
