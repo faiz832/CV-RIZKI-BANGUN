@@ -27,7 +27,7 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-full flex items-center">
             <div className="px-4 md:px-8 xl:px-0 w-3/4 md:max-w-lg lg:max-w-xl xl:max-w-2xl text-white lg:text-black">
               <h1 className="text-2xl sm:text-5xl xl:text-6xl font-bold tracking-tighter font-montserrat">Supporting Your Industrial Strength With Trusted Toughness.</h1>
-              <p className="max-w-lg my-6 text-xs sm:text-base text-white lg:text-gray-500">Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!</p>
+              <p className="max-w-lg my-6 text-xs sm:text-base text-white lg:text-gray-500 md:font-semibold">Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!</p>
 
               {/* CTA Button */}
               <div className="flex flex-col-reverse sm:flex-row gap-4">
