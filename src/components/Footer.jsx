@@ -2,7 +2,7 @@ import Logo from "../assets/icons/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-[#e9e9e9]">
+    <footer className="border-t border-gray-200">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative pb-4 pt-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-12">
@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <hr className="border-gray-400 sm:mx-auto mt-4 sm:mt-8 mb-4" />
+          <hr className="border-gray-200 sm:mx-auto mt-4 sm:mt-8 mb-4" />
 
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-between text-xs text-gray-500">
             <span className="text-center">
