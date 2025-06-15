@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { allProducts } from "../data/products";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -237,12 +238,12 @@ export default function ProductDetails() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="md:w-1/2 w-full">
               {/* Display utama */}
-              <div className="w-full aspect-square overflow-hidden rounded-lg">
+              <motion.div className="w-full aspect-square overflow-hidden rounded-lg" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.1 }}>
                 <img src={mainImage} alt={product.name} className="w-full h-full object-cover transition duration-300" />
-              </div>
+              </motion.div>
 
               {/* Thumbnails */}
-              <div className="grid grid-cols-6 gap-3 mt-4">
+              <motion.div className="grid grid-cols-6 gap-3 mt-4" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }}>
                 {imageOptions.map((img, index) => (
                   <img
                     key={index}
@@ -252,15 +253,25 @@ export default function ProductDetails() {
                     className={`aspect-square object-cover w-full rounded-lg cursor-pointer border-2 transition duration-300 ${mainImage === img ? "border-green-600 opacity-100" : "border-transparent opacity-50 hover:opacity-80"}`}
                   />
                 ))}
-              </div>
+              </motion.div>
             </div>
 
             <div className="md:w-1/2 text-center md:text-left">
-              <h3 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-3">{product.name}</h3>
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{product.about}</p>
-              <Link to="/products" className="mt-6 inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition">
+              <motion.h3 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-3" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.3 }}>
+                {product.name}
+              </motion.h3>
+              <motion.p className="text-gray-600 text-sm sm:text-base leading-relaxed" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.4 }}>
+                {product.about}
+              </motion.p>
+              <motion.a
+                href="/products"
+                className="mt-6 inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-full transition"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: 0.5 }}
+              >
                 Back to Products
-              </Link>
+              </motion.a>
             </div>
           </div>
         </div>

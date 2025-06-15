@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import articles from "../data/articles";
+import { motion } from "framer-motion";
 
 export default function ArticleDetails() {
   const { id } = useParams();
@@ -230,12 +231,16 @@ export default function ArticleDetails() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="my-12 md:my-24 max-w-3xl mx-auto flex flex-col items-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl text-center font-semibold">{article.title}</h1>
-        <p className="text-sm md:text-base text-gray-600 mt-8">Published: {article.date}</p>
+        <motion.h1 className="text-4xl md:text-6xl lg:text-7xl text-center font-semibold" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.1 }}>
+          {article.title}
+        </motion.h1>
+        <motion.p className="text-sm md:text-base text-gray-600 mt-8" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }}>
+          Published: {article.date}
+        </motion.p>
       </div>
 
       <div className="rounded-3xl overflow-hidden aspect-video">
-        <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
+        <motion.img src={article.image} alt={article.title} className="w-full h-full object-cover" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.3 }} />
       </div>
 
       <div className="mt-12 md:mt-24 max-w-3xl mx-auto md:text-lg">

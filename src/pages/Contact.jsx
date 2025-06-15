@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import "../css/contact.css";
 import Pattern2 from "../assets/icons/pattern2.svg";
 import Pattern3 from "../assets/icons/pattern3.svg";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const form = useRef();
@@ -28,11 +29,20 @@ export default function Contact() {
         <img src={Pattern2} alt="" className="absolute -left-16 md:left-0 top-10 md:top-12 w-30 md:w-40 opacity-20" />
 
         <div className="contact section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-6xl w-max mx-auto font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 my-12">Contact Us</h1>
+          <motion.h1
+            className="text-5xl md:text-6xl w-max mx-auto font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 my-12"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
+          >
+            Contact Us
+          </motion.h1>
 
-          <p className="w-full lg:w-2/4 mx-auto text-center sm:text-lg">Get in touch with us and let us know how we can help you.</p>
+          <motion.p className="w-full lg:w-2/4 mx-auto text-center sm:text-lg" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }}>
+            Get in touch with us and let us know how we can help you.
+          </motion.p>
 
-          <div className="contact-container grid mt-12">
+          <motion.div className="contact-container grid mt-12" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.3 }}>
             <div className="contact-content">
               <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <div className="contact-form-div">
@@ -129,7 +139,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <div className="mt-12 mb-24">
             <h1 className="text-3xl font-bold text-center mb-12">Or Visit Us Here</h1>

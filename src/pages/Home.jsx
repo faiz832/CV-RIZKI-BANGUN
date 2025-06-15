@@ -14,6 +14,7 @@ import VisiImg3 from "../assets/images/visi-3.png";
 import VisiImg4 from "../assets/images/visi-4.png";
 import Certificate1 from "../assets/images/certificate-1.png";
 import Certificate2 from "../assets/images/certificate-2.png";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -21,16 +22,27 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[552px] md:min-h-[calc(100vh-100px)]">
         <div className="relative h-[552px] md:min-h-[calc(100vh-100px)] my-2 bg-white rounded-lg shadow-lg lg:shadow-none overflow-hidden">
-          <img src={HeroBg} alt="hero-img" className="absolute top-0 right-0 w-full lg:w-1/2 h-full object-cover lg:object-right rounded-lg" />
+          <motion.img
+            src={HeroBg}
+            alt="hero-img"
+            className="absolute top-0 right-0 w-full lg:w-1/2 h-full object-cover lg:object-right rounded-lg"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+          />
           <div className="lg:hidden absolute inset-0 bg-gradient-to-r from-green-900 bg-opacity-25"></div>
 
           <div className="absolute top-0 left-0 w-full h-full flex items-center">
             <div className="px-4 md:px-8 xl:px-0 w-3/4 md:max-w-lg lg:max-w-xl xl:max-w-2xl text-white lg:text-black">
-              <h1 className="text-2xl sm:text-5xl xl:text-6xl font-bold tracking-tighter font-montserrat">Supporting Your Industrial Strength With Trusted Toughness.</h1>
-              <p className="max-w-lg my-6 text-xs sm:text-base text-white lg:text-gray-500 md:font-semibold">Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!</p>
+              <motion.h1 className="text-2xl sm:text-5xl xl:text-6xl font-bold tracking-tighter font-montserrat" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.1 }}>
+                Supporting Your Industrial Strength With Trusted Toughness.
+              </motion.h1>
+              <motion.p className="max-w-lg my-6 text-xs sm:text-base text-white lg:text-gray-500 md:font-semibold" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }}>
+                Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!
+              </motion.p>
 
               {/* CTA Button */}
-              <div className="flex flex-col-reverse sm:flex-row gap-4">
+              <motion.div className="flex flex-col-reverse sm:flex-row gap-4" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.3 }}>
                 {/* Visit Us Button */}
                 <a href="https://maps.app.goo.gl/mU62TXGjx26Cf7sD6" target="_blank" className="text-sm sm:text-base w-max inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition">
                   <img src={MapIcon} alt="" className="w-6 h-6 hidden md:block" />
@@ -46,7 +58,7 @@ export default function Home() {
                   <img src={PhoneIcon} alt="" className="hidden md:block" />
                   Contact Us
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
