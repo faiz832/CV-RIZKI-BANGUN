@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import WaButton from "./components/WaButton";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Articles from "./pages/Articles";
@@ -16,7 +15,6 @@ export default function App() {
     <Router>
       <ScrollToTop />
       <Navbar />
-      <WaButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/articles" element={<Articles />} />

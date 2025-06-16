@@ -37,7 +37,7 @@ export default function Home() {
               <motion.h1 className="text-2xl sm:text-5xl xl:text-6xl font-bold tracking-tighter font-montserrat" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.1 }}>
                 Supporting Your Industrial Strength With Trusted Toughness.
               </motion.h1>
-              <motion.p className="max-w-lg my-6 text-xs sm:text-base text-white lg:text-gray-500 md:font-semibold" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }}>
+              <motion.p className="max-w-lg my-6 text-xs sm:text-base md:font-semibold" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: 0.2 }}>
                 Make every construct more perfect with our sandblasting equipment. Consult needs ? You are with us!
               </motion.p>
 
