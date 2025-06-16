@@ -66,7 +66,7 @@ export default function Contact() {
                   <textarea name="message" cols="30" rows="10" className="contact-form-input" placeholder="Write your message here!"></textarea>
                 </div>
 
-                <button type="submit" className="cursor-pointer inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded transition">
+                <button type="submit" className="cursor-pointer inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-8 rounded transition">
                   Send
                 </button>
               </form>
