@@ -7,9 +7,6 @@ export default function ProductDetails() {
   const { id } = useParams();
   const product = allProducts.find((item) => item.id === id);
 
-  const imageOptions = [product.thumbnail, ...product.detailsImg]; // ← pindahkan setelah pengecekan product
-  const [mainImage, setMainImage] = useState(product.thumbnail);
-
   if (!product) {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen relative flex items-start">
@@ -230,6 +227,9 @@ export default function ProductDetails() {
       </div>
     );
   }
+
+  const imageOptions = [product.thumbnail, ...product.detailsImg]; // ← pindahkan setelah pengecekan product
+  const [mainImage, setMainImage] = useState(product.thumbnail);
 
   return (
     <div>

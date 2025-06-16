@@ -217,10 +217,10 @@ export default function ArticleDetails() {
             </defs>
           </svg>
           <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mt-4">404</h1>
-          <p class="text-xl md:text-2xl mt-4 text-center w-3/4">
+          <p class="text-xl md:text-2xl text-center w-3/4 mt-4 mb-8">
             Oops! The <strong>article</strong> you are looking for was not found.
           </p>
-          <a href="/" class="mt-8 inline-block bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-full">
+          <a href="/" class="inline-block bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded-full">
             Back to Home
           </a>
         </div>
