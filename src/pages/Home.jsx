@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
-import HeroBg from "../assets/images/hero-bg-1.png";
 import MapIcon from "../assets/icons/map.svg";
 import PhoneIcon from "../assets/icons/phone.svg";
 import TrustIcon from "../assets/icons/trust.svg";
 import CertifiedIcon from "../assets/icons/certified.svg";
 import PriceIcon from "../assets/icons/price.svg";
-import CTABg from "../assets/images/cta-bg.png";
 import LogoWhite from "../assets/icons/logo-white.svg";
 import Pattern from "../assets/icons/pattern.svg";
+
+import HeroBg from "../assets/images/hero-bg.png";
+import CTABg from "../assets/images/cta-bg.png";
 import VisiImg1 from "../assets/images/visi-1.png";
 import VisiImg2 from "../assets/images/visi-2.png";
 import VisiImg3 from "../assets/images/visi-3.png";
