@@ -6,7 +6,7 @@ import PriceIcon from "../assets/icons/price.svg";
 import LogoWhite from "../assets/icons/logo-white.svg";
 import Pattern from "../assets/icons/pattern.svg";
 
-import HeroBg from "../assets/images/hero-bg.png";
+import HeroBg from "../assets/images/hero-bg.webp";
 import CTABg from "../assets/images/cta-bg.png";
 import VisiImg1 from "../assets/images/visi-1.png";
 import VisiImg2 from "../assets/images/visi-2.png";
